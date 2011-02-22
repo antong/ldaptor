@@ -42,9 +42,12 @@ def escape(s):
     return s
 
 class LDAPString(BEROctetString):
-    pass
+    def __init__(self, value=None, tag=None):
+        if isinstance(value, unicode):
+            value = value.encode('utf-8')
+        BEROctetString.__init__(self, value=value, tag=tag)
 
-class LDAPAttributeValue(BEROctetString):
+class LDAPAttributeValue(LDAPString):
     pass
 
 class LDAPMessage(BERSequence):
