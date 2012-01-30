@@ -1170,7 +1170,6 @@ class LDAPExtendedRequest(LDAPProtocolRequest, BERSequence):
         assert requestName is not None
         assert isinstance(requestName, basestring)
         self.requestName=requestName
-        assert isinstance(requestValue, basestring)
         self.requestValue=requestValue
 
     def __str__(self):
