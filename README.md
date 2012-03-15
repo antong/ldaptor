@@ -14,6 +14,9 @@ Also included is a web-based user interface to search and edit
 information in an LDAP directory and a set of LDAP utilities for use
 from the command line.
 
+Ldaptor is distributed under the GNU Lesser General Public License. See
+the accompanying COPYING file for more details.
+
 
 Quick Usage Example
 -------------------
